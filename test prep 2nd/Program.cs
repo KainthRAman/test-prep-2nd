@@ -18,9 +18,25 @@ namespace test_prep_2nd
         {
             //Write a C# program to find the longest word in a string.
             string[] words = input.Split('');
-            int
-        }
+
+            int wordArrayLength = wordLength.Length;
+            int[] wordsLength = new int[wordArrayLength];
+            int x = 0;
+            foreach (var word in words)
+            {
+                //TODO
+            }
+            string currentWord = words[0];
+            string nextWord = currentWord;
+            string longestword = currentWord;
+            for ( int y=0; y<words.Length-1;y++)
+            {
+                currentWord = words[y];
+                nextWord = words[y+1];
+            }
 
         }
+
+        
     }
 }
