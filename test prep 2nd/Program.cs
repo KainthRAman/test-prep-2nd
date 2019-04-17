@@ -11,8 +11,8 @@ namespace test_prep_2nd
         static void Main(string[] args)
         {
             Program a = new Program();
-            Console.WriteLine("the longest word is:");
-            Console.WriteLine(a.MyFunctionA("Ada Lovelace wrote the first algorithem designed for processing by an Analytic Engine."));
+            Console.WriteLine("The Longest word is :");
+            Console.WriteLine(a.MyFunctionA("Ada Lovelace wrote the first alogirithm designed for processing by an Analytical Engine."));
         }
         public MyFunctionA(string input)
         {
