@@ -14,29 +14,31 @@ namespace test_prep_2nd
             Console.WriteLine("The Longest word is :");
             Console.WriteLine(a.MyFunctionA("Ada Lovelace wrote the first alogirithm designed for processing by an Analytical Engine."));
         }
-        public MyFunctionA(string input)
+        public string MyFunctionA(string input)
         {
-            //Write a C# program to find the longest word in a string.
-            string[] words = input.Split('');
-
-            int wordArrayLength = wordLength.Length;
-            int[] wordsLength = new int[wordArrayLength];
+            string[] words = input.Split(' ');
+            int wordArrayLength = words.Length;
+            int[] wordLength = new int[wordArrayLength];
             int x = 0;
+            string aa = " ";
             foreach (var word in words)
             {
-                //TODO
+                if (word.Length > x)
+                {
+                    input = word;
+                    aa = input;
+                    x = word.Length;
+                }
             }
             string currentWord = words[0];
-            string nextWord = currentWord;
-            string longestword = currentWord;
-            for ( int y=0; y<words.Length-1;y++)
+            string nextWord;
+            string longestWord = currentWord;
+            for (int y = 0; y < words.Length - 1; y++)
             {
                 currentWord = words[y];
-                nextWord = words[y+1];
+                nextWord = words[y + 1];
             }
-
+            return aa;
         }
-
-        
     }
 }
